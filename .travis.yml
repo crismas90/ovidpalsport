@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "6.9"
+install:
+  - npm install
+# before_script:
+script:
+  - npm run lint
+  - npm test
+notifications:
+    slack: 
+      on_pull_requests: false
+      rooms:
+        - fabrikafrontend:TEpM4Cm1fubobfLUFPzgOdKt
+      on_success: change # default: always
+      on_failure: change # default: always
+    

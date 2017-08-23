@@ -1,0 +1,462 @@
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans'); 
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Open Sans';
+    src: url('fonts/opensansregular.eot');
+    src: local('openSansregular'), 
+         url('fonts/opensansregular.eot') format('embedded-opentype'),
+         url('fonts/opensansregular.woff') format('woff'), 
+         url('fonts/opensansregular.ttf') format('truetype'), 
+         url('fonts/opensansregular.svg#openSansregular') format('svg');
+}
+
+@font-face {
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Open Sans semibold';
+    src: url('fonts/opensanssemibold.eot');
+    src: local('openSanssemibold'), 
+         url('fonts/opensanssemibold.eot') format('embedded-opentype'),
+         url('fonts/opensanssemibold.woff') format('woff'), 
+         url('fonts/opensanssemibold.ttf') format('truetype'), 
+         url('fonts/opensanssemibold.svg#openSanssemibold') format('svg');
+}
+
+@font-face {
+    font-weight: lighter;
+    font-style: normal;
+    font-family: 'OpenSansLight';
+    src: url('fonts/OpenSansLight.eot');
+    src: url('fonts/OpenSansLight.eot') format('embedded-opentype'),
+         url('fonts/OpenSansLight.woff2') format('woff2'),
+         url('fonts/OpenSansLight.woff') format('woff'),
+         url('fonts/OpenSansLight.ttf') format('truetype'),
+         url('fonts/OpenSansLight.svg#OpenSansLight') format('svg');
+}
+
+
+html {
+    min-height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    font-size: 14px;
+    background-color: #fff;
+    font-family: 'Open Sans', 'Mariad Pro', Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+li {
+    list-style: none;
+}
+
+a:hover,
+a {
+    text-decoration: none;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.btn {
+    transition: all 300ms ease-in-out;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #ededed;
+    color: #3c3c3c;
+    border: 1px solid #fff;
+}
+
+/* Typography
+-----------------------------------------------------------------------------*/
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Open Sans';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Open Sans';
+    font-size: 38px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Open Sans';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+p,span {
+    font-family: 'Open Sans';
+    font-size: 15px;
+    line-height: 21px;
+    font-style: normal;
+    font-weight: normal;    
+}
+
+i {
+    color: #fff;
+}
+
+/*Navigation--------------------------------------------------------------*/
+
+.navbar {
+    background-color: #ebd738;
+    text-transform: uppercase; 
+    height: 50px;  
+}
+
+.navbar-toggle {
+    background-color: #ebd738 !important;
+}
+
+.nav>li>a,
+.navbar-brand {
+    padding: 0 15px;
+    line-height: 50px;
+}
+
+.navbar-header .navbar-brand,
+.navbar .menu-item a {
+    color: #fff !important;
+    opacity: 0.7
+}
+
+.navbar .menu-item a:hover {
+    opacity: 1;
+    background-color: #fce21b !important;
+}
+
+.navbar-header .navbar-brand:hover {
+    opacity: 1;
+}
+
+.navbar-default,
+.navbar-collapse {
+    background-color: #ebd738 !important;
+    border-color: #ebd738 !important;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
+
+/*Header--------------------------------------------------------------*/
+
+.header {
+    background-image: url(../images/bg3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 610px;
+    width: 100%;
+    padding: 30px 0  30px;
+    margin-top: 50px;
+}
+
+.header .head-content {
+    margin-top: 150px;
+}
+
+.header .head {
+    background-color: rgba(44, 107, 222, 0.7);
+    padding: 5px;
+}
+
+.header h1,
+.header h4,
+.header p {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.contacts {
+    background-color: rgba(44, 107, 222, 0.7);
+    padding: 10px;
+}
+
+.contacts a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.contacts span {
+    display: block;
+    padding: 5px;
+    color: #fff;
+}
+
+.contacts i {
+    margin-right: 5px;
+}
+
+@media(max-width:450px){
+    .header{
+        height: 700px;
+    }
+
+    .header .head {
+        padding: 20px;
+        text-align: center;
+    }
+        .header h1 {
+        font-size: 25px;
+    }
+        .header p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:767px) and (min-width:451px){
+
+    .header {
+        height: 700px;
+    }
+        .header .head {
+        padding: 20px;
+        text-align: center;
+    }
+        .header .btn {
+        margin: 10px;
+    }
+}
+/*TRAINING--------------------------------------------------------------*/
+
+.training {
+    padding: 50px 0 80px;
+    text-align: center;
+    background-color: #ebd738;
+}
+
+.training h2,
+.training h4,
+.training strong {
+    color: #4c4c4c;
+    margin: 20px 0 40px;
+}
+
+.training p{
+    color: #737373;
+}
+
+.training img {
+    height: 300px;
+    width: 300px;
+    margin-top: 80px;
+}
+
+@media(max-width:450px){
+    .training {
+        padding: 50px;
+    }
+}
+
+/*Table--------------------------------------------------------------*/
+
+.table {
+    padding: 50px 0 80px;
+}
+
+.table h2 {
+    text-align: center;
+    margin: 20px 0 40px;
+    color: #4c4c4c;
+}
+
+/*TEAM--------------------------------------------------------------*/
+
+.team {
+    padding: 50px 0 80px;
+    text-align: center;
+    background-color: #ebd738;
+}
+
+.team h2,
+.team h4,
+.team strong {
+    color: #4c4c4c;
+    margin: 20px 0 40px;
+}
+
+.team p{
+    color: #737373;
+}
+
+.team img {
+    height: 150px;
+    width: 150px;
+    margin-top: 80px;
+}
+
+@media(max-width:450px){
+    .team {
+        padding: 50px;
+    }
+}
+
+/*Video--------------------------------------------------------------*/
+
+.video-section {
+    padding: 50px 0 80px;
+    text-align: center;
+    background-color: #ebd738;
+}
+
+.video-section h2 {
+    color: #4c4c4c;
+    margin: 20px 0 40px;
+}
+
+/*About--------------------------------------------------------------*/
+
+.about {
+    padding: 50px 0 80px;
+}
+
+.about h2 {
+    text-align: center;
+    color: #4c4c4c;
+    margin: 20px 0 40px;
+}
+
+.about .parag {
+    padding-left: 10px;
+}
+
+.about p {
+    text-indent: 1.5em;
+    text-align: justify;
+}
+
+/*Contact--------------------------------------------------------------*/
+
+.contact {
+    background-color: rgba(44, 107, 222, 0.7);
+    padding: 50px 0 80px;
+    color: #fff;
+}
+
+.contact h2 {
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.contact span {
+    display: block;
+    padding: 5px;
+}
+
+.contact i {
+    margin-right: 5px;
+}
+
+.contact-content iframe {
+    width: 100%;
+    height: 300px;
+}
+/*Photo-gallery--------------------------------------------------------------*/
+
+.gallery {
+    padding: 50px 0 80px;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin: 20px 0 40px;
+    color: #4c4c4c;
+}
+
+.gallery .col-sm-3 {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.gallery .img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+/*Footer--------------------------------------------------------------*/
+
+.footer {
+    background-color: #222222;
+    color: #cccccc;
+    padding: 30px;
+}
+
+.footer .social {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.footer a{
+    color: #cccccc;
+}
+
+.footer span {
+    display: block;
+    margin: 10px 0;
+}
+
+.footer i {
+    margin-right: 5px;
+}
+
+@media(max-width:320px){
+
+}
+

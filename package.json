@@ -1,0 +1,22 @@
+{
+	"name": "ovidpalsport",
+	"description": "Sport palace Ovidiopol",
+	"author": "Zonov Nick",
+	"version": "1.1.0",
+	"dependencies": {
+
+	},
+	"devDependencies": {
+		"grunt": "1.0.1",
+		"grunt-contrib-csslint": "2.0.0",
+		"grunt-contrib-watch": "1.0.0",
+		"grunt-htmlhint":  "0.9.13",
+      	"grunt-w3c-html-validation": "0.1.8",
+		"grunt-browser-sync": "2.2.0"
+	},
+	"scripts": {
+		"start": "grunt start",
+		"lint": "grunt htmlcode & grunt htmlvalidate & grunt csscode",
+		"test": "echo 'Without tests'"
+	}
+}
