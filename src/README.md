@@ -1,6 +1,5 @@
-# landing page
+# Сайт для КП "Дворец спорта"
 
-Лендинг на bootstrap framework,анимация WOW.js
 
 # Посмореть   -> [ссылка](https://crismas90.github.io/ovidpalsport/src/)
 
